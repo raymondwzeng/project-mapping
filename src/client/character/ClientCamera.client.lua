@@ -14,8 +14,8 @@ local Character = script.Parent
 Camera.CameraType = Enum.CameraType.Scriptable
 
 local function followLocalCharacter()
-    Camera.CFrame = CFrame.new(Character:GetPrimaryPartCFrame().p + Vector3.new(0, 20, 0)) -- It's important for the CFrame, otherwise we end up with rotating the camera on strafe
-    Camera.CFrame = Camera.CFrame:ToWorldSpace(CFrame.Angles(math.rad(-30), 0, 0)) --30 degrees as per D2
+    Camera.CFrame = CFrame.new(Character:GetPrimaryPartCFrame().p + Vector3.new(0, 20, 10)) -- It's important for the CFrame, otherwise we end up with rotating the camera on strafe
+    Camera.CFrame = Camera.CFrame:ToWorldSpace(CFrame.Angles(math.rad(-60), 0, 0)) --30 degrees as per D2
 end
 
 RunService:BindToRenderStep("followLocalCharacter", Enum.RenderPriority.Camera.Value - 1, followLocalCharacter)
