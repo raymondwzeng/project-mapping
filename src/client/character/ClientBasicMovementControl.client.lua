@@ -1,5 +1,5 @@
 --[[
-    ClientUserControl.client.lua
+    ClientBasicMovementControl.client.lua
     
     @description: Contains the logic for player control in the client.
     @author: NINJAMASTR999
